@@ -60,6 +60,9 @@ img {
   font-size: 1.15rem;
   font-weight: 600;
 }
+.proj-header {
+  font-size: 1.15rem;
+}
 
 @media screen and (max-width : 440px) {
   .container {
