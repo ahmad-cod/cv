@@ -76,4 +76,7 @@ img {
   .second {
     flex-basis: 100%;
   }
+  .mentors img {
+    width: 25%;
+  }
 }
