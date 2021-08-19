@@ -10,7 +10,20 @@ a {
   color: inherit;
   text-decoration: underline;
 }
-
+.container {
+  display: flex;
+}
+.first div {
+  padding: 10px;
+}
+.second {
+  text-align: center;
+  border-left: 1px solid rgba(100, 100, 100, .45);
+  flex-basis: 200%;
+}
+.second div {
+  padding: 4px;
+}
 
 h1, h2, h3, h4, h5, th {
   font-family: 'Yeseva One', cursive;
@@ -20,9 +33,37 @@ body {
   background: rgb(180, 193, 255);
   background: linear-gradient(156deg, rgba(129, 196, 255, 0.227) 0%, rgba(240, 250, 255, 1) 35%);
   color: rgb(100, 100, 100);
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
 }
 img {
   padding: 10px 10px 0px;
   width: 300px;
   height: 150px;
+}
+.link {
+  text-decoration: underline;
+}
+.mentors {
+  display: flex;
+  justify-content: space-around;
+}
+.mentors img {
+  width: 120px;
+  height: 80px;
+}
+#hng {
+  width: 170px;
+}
+.proj-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width : 440px) {
+  .container {
+    flex-flow: column wrap;
+    max-width: 100%;
+  }
 }
